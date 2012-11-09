@@ -1,10 +1,10 @@
-**Log Exception**
+**Log Error**
 ----
-  Returns information about the created exception.
+  Returns information about the created error.
 
 * **URL**
 
-  `/exception`
+  `/error`
 
 * **Method:**
 
@@ -20,7 +20,7 @@
 
   **Required:**
 
-  `exceptionType=[string]`
+  `errorType=[string]`
 
   **Optional:**
 
@@ -59,8 +59,8 @@
 * **Sample Call:**
 
   ```
-    curl https://api.foilr.com/exception \
+    curl https://api.foilr.com/error \
      -u APIKEY: \
-     -d "exceptionType=server" \
+     -d "errorType=server" \
      -d "url=example.com/test"
   ```
